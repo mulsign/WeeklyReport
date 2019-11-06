@@ -1,6 +1,6 @@
 .idea/
 mongo_data/
-pg96_data/
+pg_data/
 *.log
 mongo/
 *.sqlite
