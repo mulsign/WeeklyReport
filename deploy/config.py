@@ -17,25 +17,25 @@ IMAGE_UPLOAD_DIR = 'static/upload/'
 UPLOAD_FOLDER = os.path.join(base_dir, 'app/static/upload/')
 
 #MAIL_SERVER = 'smtp.163.com'
-MAIL_SERVER = ''
+MAIL_SERVER = 'smtp.163.com'
 MAIL_PORT = 465
 MAIL_USE_SSL = True
-MAIL_USERNAME = '<EMAIL@ADDRESS>'
-MAIL_PASSWORD = '<EMAIL_PASSWORD>'
+MAIL_USERNAME = ''
+MAIL_PASSWORD = ''
 
 WR_MAIL_SUBJECT_PREFIX = '[WeeklyReport]'
-WR_MAIL_SENDER = 'WeeklyReport <weeklyreport@163.com>'
+WR_MAIL_SENDER = ''
 
 
 DEPARTMENTS = (
-    '人事行政部',
-    '软件测试部',
-    '产品开发部',
-    '新技术研发部'
+    '开发部',
+    '测试部',
+    '人事部',
+    '其他'
 )
 
 DEFAULT_CONTENT = "<p><strong>1、上周计划完成情况：</strong></p><ol><li></li></ol>" \
-                  "<p>&nbsp;<strong>2、计划外工作（包含协助运维工作）：</strong></p><ol><li></li></ol>" \
+                  "<p>&nbsp;<strong>2、计划外工作：</strong></p><ol><li></li></ol>" \
                   "<p>&nbsp;<strong>3、重要问题：</strong></p><ol><li></li></ol>" \
                   "<p>&nbsp;<strong>4、持续未处理解决的事情：</strong></p><ol><li></li></ol>" \
                   "<p>&nbsp;<strong id=\"next_week\">5、下周计划：</strong></p><ol><li></li></ol>"

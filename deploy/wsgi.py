@@ -5,8 +5,7 @@ from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager, Shell
 import os
 import sys
-reload(sys)
-sys.setdefaultencoding('utf8')
+
 
 
 config_file = os.path.join(

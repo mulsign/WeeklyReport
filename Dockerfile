@@ -6,12 +6,13 @@ ENV LANG en_US.UTF-8
 RUN ln -s -f /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     curl -fsSL https://setup.ius.io/ | sh && \
     yum update -y && \
-    yum install -y python36u python36u-devel python36u-pip && \
+    yum install -y python36u python36u-devel python36u-pip postgresql postgresql-devel python-devel && \
     mkdir ~/.pip && \
     echo -e "[global]\nindex-url=http://pypi.douban.com/simple/\ntrusted-host=pypi.douban.com">~/.pip/pip.conf && \
     yum clean all
 
 RUN yum install -y supervisor
+RUN yum install -y gcc
 
 RUN mkdir -p /deploy
 #VOLUME /deploy

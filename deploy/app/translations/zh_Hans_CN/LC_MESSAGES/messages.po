@@ -197,7 +197,7 @@ msgstr "统计"
 #: templates/base.html:58 templates/report/read.html:13
 #: templates/report/read_crew.html:26 templates/report/read_department.html:24
 msgid "Employee"
-msgstr "员工"
+msgstr "成员"
 
 #: templates/base.html:68
 msgid "Admin"
